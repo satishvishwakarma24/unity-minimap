@@ -261367,7 +261367,7 @@ Transform:
   m_GameObject: {fileID: 1388195110}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -398.39, y: 70.704, z: 10.06}
+  m_LocalPosition: {x: -324.09, y: 70.704, z: 10.06}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -342429,7 +342429,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 25
+  orthographic size: 29.41
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
