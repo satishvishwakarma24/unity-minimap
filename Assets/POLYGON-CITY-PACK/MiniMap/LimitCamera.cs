@@ -3,9 +3,17 @@ using UnityEngine;
 
 public class LimitCamera : MonoBehaviour
 {
-    public GameObject Player;
+    public Transform player; // Reference to the player's transform
+    void LateUpdate()
+    {
+        // Keep the camera's position updated with the player's position,
+        // but don't change the rotation of the camera.
+        Vector3 newPosition = player.position;
+        newPosition.y = transform.position.y; // Keep the camera's original height
+        transform.position = newPosition;
 
-    private void LateUpdate() {
-        transform.position = new Vector3(Player.transform.position.x, 15f,Player.transform.position.z);    
+        // Optional: If you want to ensure the camera is always looking straight down,
+        // you can uncomment the line below.
+        // transform.rotation = Quaternion.Euler(90f, 0f, 0f);
     }
 }
