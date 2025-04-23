@@ -1,0 +1,4 @@
+repository "Vin-Wonder-Minimap-App/Vin-Wonder-Minimap-App@13469779757722@cloud"
+  path "/"
+    br "/main"
+    co "/main"
