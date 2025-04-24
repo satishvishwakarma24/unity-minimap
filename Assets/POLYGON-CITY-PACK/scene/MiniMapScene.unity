@@ -311420,7 +311420,7 @@ GameObject:
   - component: {fileID: 1584619919}
   - component: {fileID: 1584619918}
   m_Layer: 5
-  m_Name: MapIconsCanvas
+  m_Name: MapIconsBtnCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -351660,7 +351660,7 @@ GameObject:
   - component: {fileID: 1777824911}
   - component: {fileID: 1777824915}
   m_Layer: 5
-  m_Name: DIrectionsIconsCanvas
+  m_Name: DIrectionsIconsBtnCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
