@@ -75,3 +75,6 @@ crashlytics-build.properties
 
 #  added 
 .env
+
+# Builds
+[Bb]uild*/
