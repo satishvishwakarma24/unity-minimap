@@ -78,3 +78,5 @@ crashlytics-build.properties
 
 # Builds
 [Bb]uild*/
+_Build/
+Build/
