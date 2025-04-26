@@ -40565,13 +40565,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 382226261}
-        m_TargetAssemblyTypeName: MapToggle, Assembly-CSharp
-        m_MethodName: ToggleMenu
-        m_Mode: 1
+      - m_Target: {fileID: 1363158152}
+        m_TargetAssemblyTypeName: CanvasToggleManager, Assembly-CSharp
+        m_MethodName: ToggleCanvas
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 504580018}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Canvas, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -75220,51 +75220,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1415193768}
   m_SourcePrefab: {fileID: 100100000, guid: e53777a03d3be324ab0664ab7ef3d886, type: 3}
---- !u!1 &382226260
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 382226262}
-  - component: {fileID: 382226261}
-  m_Layer: 0
-  m_Name: +++++++MapToggleController+++++++
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &382226261
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 382226260}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aef82a0eabfc64789a37d2457ce65ccc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  menuCanvas: {fileID: 504580015}
---- !u!4 &382226262
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 382226260}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1836, y: 995, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &382284262
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -83409,51 +83364,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4588435873696250, guid: effb1b31d7e11a54e9b051312c1a2ee4, type: 3}
   m_PrefabInstance: {fileID: 416811774}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &417191904
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 417191906}
-  - component: {fileID: 417191905}
-  m_Layer: 0
-  m_Name: +++++++MenuController+++++++
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &417191905
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 417191904}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bb2346c97666a4947b1aff4f29972e0f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  menuCanvas: {fileID: 1862256173}
---- !u!4 &417191906
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 417191904}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1836, y: 995, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &417479471
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -99584,6 +99494,7 @@ MonoBehaviour:
   miniMapCamera: {fileID: 1795426644}
   collapsedOrthoSize: 50
   expandedOrthoSize: 100
+  isExpanded: 0
 --- !u!1001 &504995150
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -133131,13 +133042,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 417191905}
-        m_TargetAssemblyTypeName: DropdownToggleBtn, Assembly-CSharp
-        m_MethodName: ToggleMenu
-        m_Mode: 1
+      - m_Target: {fileID: 1363158152}
+        m_TargetAssemblyTypeName: CanvasToggleManager, Assembly-CSharp
+        m_MethodName: ToggleCanvas
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 1862256176}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Canvas, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -274474,6 +274385,53 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4901737832239770, guid: e3ee9b4631379bf44b7e076739afa41e, type: 3}
   m_PrefabInstance: {fileID: 1362744672}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1363158151
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1363158153}
+  - component: {fileID: 1363158152}
+  m_Layer: 0
+  m_Name: ++CanvasToggleManager++
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1363158152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1363158151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b0e7f1b16e52eb44b03306dbc6e88fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvases:
+  - {fileID: 504580018}
+  - {fileID: 1862256176}
+--- !u!4 &1363158153
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1363158151}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -371.48694, y: 161.64507, z: -8.845891}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1363254790
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -325222,6 +325180,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   menuCanvas: {fileID: 1862256173}
+  isMenuOpen: 0
 --- !u!114 &1584619919
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -368354,6 +368313,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   menuCanvas: {fileID: 1862256173}
+  isMenuOpen: 0
 --- !u!1001 &1778321228
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -439485,6 +439445,7 @@ MonoBehaviour:
   collapsedPosition: {x: 0, y: 0}
   expandedPosition: {x: -15, y: -19}
   borderPadding: 30
+  isExpanded: 0
 --- !u!4 &2105113614 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4379673244704792, guid: 1be61187b5d765449be824463642cb0f, type: 3}
@@ -449951,8 +449912,6 @@ SceneRoots:
   - {fileID: 504580019}
   - {fileID: 1263798644}
   - {fileID: 603942480}
-  - {fileID: 417191906}
-  - {fileID: 382226262}
   - {fileID: 2104300306}
   - {fileID: 1363445690}
   - {fileID: 1777824914}
@@ -449963,3 +449922,4 @@ SceneRoots:
   - {fileID: 119726754}
   - {fileID: 1602057287}
   - {fileID: 1104419513}
+  - {fileID: 1363158153}
