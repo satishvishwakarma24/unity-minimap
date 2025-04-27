@@ -1666,10 +1666,10 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 994253257}
-        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
-        m_MethodName: set_enabled
-        m_Mode: 6
+      - m_Target: {fileID: 994253252}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: 
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1677,10 +1677,10 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: Fun Garden
           m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 1252234123}
+        m_CallState: 1
+      - m_Target: {fileID: 1252234118}
         m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
-        m_MethodName: set_enabled
+        m_MethodName: 
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1690,9 +1690,9 @@ MonoBehaviour:
           m_StringArgument: Sky Corporate Park
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 589450061}
+      - m_Target: {fileID: 589450056}
         m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
-        m_MethodName: set_enabled
+        m_MethodName: 
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -50250,7 +50250,7 @@ LineRenderer:
   - {x: 0, y: 0, z: 1}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.35
+    widthMultiplier: 1
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -107484,10 +107484,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UnityEngine.MonoBehaviour, UnityEngine
-        m_MethodName: set_runInEditMode
-        m_Mode: 6
+      - m_Target: {fileID: 1862256180}
+        m_TargetAssemblyTypeName: DropdownCloser, Assembly-CSharp
+        m_MethodName: OnConfirmButtonClicked
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -113682,6 +113682,59 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b4289919ba517cd45aff629c81afa3fe, type: 3}
+--- !u!1 &574504350
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 574504351}
+  - component: {fileID: 574504352}
+  m_Layer: 0
+  m_Name: "\u2699 DropdownController \u2699 "
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &574504351
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 574504350}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 221.58821}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1748561694}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 595.83344, y: 164.25409}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &574504352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 574504350}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd555efae9f1958409396f03c7fe03af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myDropdown: {fileID: 7913156}
+  gameObjectsToToggle:
+  - {fileID: 994253252}
+  - {fileID: 1252234118}
+  - {fileID: 589450056}
 --- !u!4 &574862870 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4088839632586982, guid: 3744e668ae9047e4b9590c326355161c, type: 3}
@@ -274835,8 +274888,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1363445690}
+  - component: {fileID: 1363445691}
   m_Layer: 0
-  m_Name: "\u2699\uFE0F LocationSelectionManager \u2699\uFE0F"
+  m_Name: "\u2699\uFE0F LocationStateManager \u2699\uFE0F"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -274857,6 +274911,26 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1748561694}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1363445691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1363445688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8ec7ecf7ab5b4c36bd244023d33ca06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startPointDropdown: {fileID: 103154395}
+  destinationPointDropdown: {fileID: 7913156}
+  locations:
+  - {fileID: 994253252}
+  - {fileID: 1252234118}
+  - {fileID: 589450056}
+  player: {fileID: 1388195110}
+  pathDrawer: {fileID: 252278111}
 --- !u!1 &1363624238
 GameObject:
   m_ObjectHideFlags: 0
@@ -283629,7 +283703,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  mouseSensitivity: 100
+  mouseSensitivity: 35
 --- !u!54 &1388195116
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -363151,6 +363225,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2104300306}
+  - {fileID: 574504351}
   - {fileID: 1363445690}
   - {fileID: 1363158153}
   - {fileID: 1575217601}
@@ -386860,13 +386935,14 @@ GameObject:
   - component: {fileID: 1862256174}
   - component: {fileID: 1862256178}
   - component: {fileID: 1862256179}
+  - component: {fileID: 1862256180}
   m_Layer: 5
   m_Name: "\u2630\uFE0F DirectionsCanvas \u2630"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1862256174
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -386978,7 +387054,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1862256173}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0b30b2c38648d479589607a23525e7ac, type: 3}
   m_Name: 
@@ -386986,6 +387062,19 @@ MonoBehaviour:
   startPoint: {fileID: 0}
   endPoint: {fileID: 0}
   lineRenderer: {fileID: 0}
+--- !u!114 &1862256180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1862256173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7482d17f964b4354b8345bb9e8c33f9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dropdownPanel: {fileID: 1862256173}
 --- !u!1001 &1862597775
 PrefabInstance:
   m_ObjectHideFlags: 0

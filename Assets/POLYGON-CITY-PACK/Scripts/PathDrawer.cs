@@ -25,16 +25,13 @@ public class PathDrawer : MonoBehaviour
     {
         // Debug.Log("Update method called.");
 
-        if (destinationObject == null)
+        if (destinationObject == null || player == null)
         {
-            // Debug.LogWarning("Destination object is null. Skipping path calculation.");
+            Debug.LogWarning("Destination object is null. Skipping path calculation.");
+            Debug.LogWarning("Player object is null. Skipping path calculation.");
             return;
         }
-        if (player == null)
-        {
-            // Debug.LogWarning("Player object is null. Skipping path calculation.");
-            return;
-        }
+
 
         // Debug.Log("Both player and destination exist. Attempting to calculate path.");
 
