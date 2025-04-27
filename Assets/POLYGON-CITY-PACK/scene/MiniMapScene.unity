@@ -50193,6 +50193,8 @@ GameObject:
   - component: {fileID: 252278110}
   - component: {fileID: 252278109}
   - component: {fileID: 252278111}
+  - component: {fileID: 252278112}
+  - component: {fileID: 252278113}
   m_Layer: 0
   m_Name: "\u27A4\u27A4\u27A4LineRenderer\u27A4\u27A4\u27A4"
   m_TagString: Untagged
@@ -50224,7 +50226,7 @@ LineRenderer:
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 5a3383e81fae24bf6b1ecd44e3271632, type: 2}
+  - {fileID: 2100000, guid: 301e44c3fe82a15408e4293fcaf93798, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -50250,7 +50252,7 @@ LineRenderer:
   - {x: 0, y: 0, z: 1}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 1
+    widthMultiplier: 0.5
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -50268,7 +50270,7 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.7132075, g: 0.031625733, b: 0, a: 1}
+      key0: {r: 0.5622641, g: 0.53786397, b: 0.53786397, a: 1}
       key1: {r: 1, g: 1, b: 1, a: 1}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
@@ -50299,8 +50301,8 @@ LineRenderer:
     numCornerVertices: 12
     numCapVertices: 12
     alignment: 0
-    textureMode: 0
-    textureScale: {x: 1, y: 1}
+    textureMode: 1
+    textureScale: {x: 0.5, y: 0.5}
     shadowBias: 0.5
     generateLightingData: 0
   m_MaskInteraction: 0
@@ -50336,6 +50338,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1388195114}
   destinationObject: {fileID: 994253253}
+--- !u!114 &252278112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 252278108}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93d1de86802f0794c82d4c481f6c4649, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scrollSpeed: 2
+--- !u!114 &252278113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 252278108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39b280d0f401c4a4bb5dc8488245912b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lineRenderer: {fileID: 252278109}
+  scrollSpeed: 2
 --- !u!1 &252366393
 GameObject:
   m_ObjectHideFlags: 0
@@ -178090,7 +178119,7 @@ GameObject:
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!114 &878793721
 MonoBehaviour:
@@ -283595,7 +283624,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!136 &1388195111
 CapsuleCollider:
@@ -290978,7 +291007,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!224 &1418739822
 RectTransform:
@@ -411299,7 +411328,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!224 &1984488954
 RectTransform:
